@@ -36,3 +36,7 @@ for t in sorted(temperaturas, reverse=True): #ler o original e nos dar uma lista
 
     print(f"{contador+1}. {t:.1f}°C ")
     contador += 1
+
+
+
+#é so um teste para visualizar mudança.
