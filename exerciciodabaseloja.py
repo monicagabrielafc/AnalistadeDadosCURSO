@@ -109,4 +109,4 @@ for vendedor in vendas_vendedor:
     print (f"{vendedor} - R$ {vendas_vendedor[vendedor]}")
 
 
-# 4. Total das vendas por região
+# 4. Total das vendas por regiãooo
