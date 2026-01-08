@@ -10,7 +10,7 @@ print("Lista de Vendas:")
 print("ID | Produto | Categoria | Valor Unitário(R$) | Quantidade")
 
 for venda in lista_vendas:
-    print(f"{venda["id"]} | {venda["produto"]} | {venda["categoria"]} | R$ {venda["valor_unitario"]:.2f} | {venda["quantidade"]}")
+    print(f"{venda['id']} | {venda['produto']} | {venda['categoria']} | R$ {venda['valor_unitario']:.2f} | {venda['quantidade']}")
 
 # Produzir as métricas e exibi-las ao usuário:
 print()
@@ -55,9 +55,27 @@ print(f"Menor Valor de Venda: R$ {menor_venda}")
 #Exibir a quantidade de vendas que superou a meta de venda de 5000 reais
 
 #Exibir o nome dos Vendedores
+lista_vendedores = []
+lista_vendas = baseLoja.vendas["vendas"]
+for venda in lista_vendas:
+    if venda["vendedor"] not in lista_vendedores:
+        lista_vendedores.append(venda["vendedor"])
 
+lista_vendedores.sort()
+for vendedor in lista_vendedores:
+    print(vendedor)
+
+print (f"Quantidade de vendedores: {len(lista_vendedores)}")
+          
 #Exibir o nome das Regiões
+lista_regiões = []
+for venda in lista_vendas:
+    if venda["regiao"] not in lista_regiões:
+        lista_vendedores.append(venda["regiao"])
 
+lista_regiões.sort()
+for regiao in lista_regiões:
+    print(regiao)
 
 # 2. Total das vendas por categoria
 # 3. Total das vendas por vendedor
