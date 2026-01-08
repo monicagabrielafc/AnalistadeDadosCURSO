@@ -52,7 +52,15 @@ for venda in lista_vendas:
 print(f"Maior Valor de Venda: R$ {maior_venda}")
 print(f"Menor Valor de Venda: R$ {menor_venda}")
 
-#Exibir a quantidade de vendas que superou a meta de venda de 5000 reais
+#Exibir a quantidade de vendas que superou a meta de venda de 3000 reais
+meta = 0
+metaatingida =  []
+for venda in lista_vendas:
+     total_venda += venda["quantidade"] * venda["valor_unitario"]
+     if total_venda >= 3000:
+       metaatingida.append(venda)
+print (f"Quantidade de vendas acima de 3 mil: {len(metaatingida)}")
+
 
 #Exibir o nome dos Vendedores
 lista_vendedores = []
@@ -71,12 +79,34 @@ print (f"Quantidade de vendedores: {len(lista_vendedores)}")
 lista_regiões = []
 for venda in lista_vendas:
     if venda["regiao"] not in lista_regiões:
-        lista_vendedores.append(venda["regiao"])
+        lista_regiões.append(venda["regiao"])
 
+print("Segue lista de regiões das vendas" )
 lista_regiões.sort()
 for regiao in lista_regiões:
-    print(regiao)
+    print (regiao)
 
 # 2. Total das vendas por categoria
+vendas_categorias =  {}
+for venda in lista_vendas:
+    if venda["categoria"] not in vendas_categorias:
+        vendas_categorias[venda['categoria']] = 0
+    vendas_categorias[venda["categoria"]] += venda["quantidade"] * venda["valor_unitario"]
+
+print (f"Quantidade de Categorias: {len(vendas_categorias)}")
+for categoria in vendas_categorias:
+    print (f"{categoria} - R$ {vendas_categorias[categoria]:.2F}")
+
 # 3. Total das vendas por vendedor
+vendas_vendedor =  {}
+for venda in lista_vendas:
+    if venda['vendedor'] not in vendas_vendedor:
+        vendas_vendedor[venda['vendedor']] = 0
+    vendas_vendedor[venda["vendedor"]] += venda["quantidade"] * venda["valor_unitario"]
+
+print (f"Quantidade de vendas por Vendedor: {len(vendas_vendedor)}")
+for vendedor in vendas_vendedor:
+    print (f"{vendedor} - R$ {vendas_vendedor[vendedor]}")
+
+
 # 4. Total das vendas por região
