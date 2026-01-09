@@ -8,8 +8,11 @@
       "usuario": "João Silva",
       "data_emprestimo": "2024-01-10",
       "data_devolucao": "2024-01-24",
+      "dias_emprestimo": 14,
       "dias_atraso": 0,
-      "multa": 0.00
+      "valor_multa_dia": 2.00,
+      "multa": 0.00,
+      "status": "No prazo"
     },
     {
       "id_emprestimo": "E002",
@@ -19,8 +22,11 @@
       "usuario": "Maria Oliveira",
       "data_emprestimo": "2024-01-05",
       "data_devolucao": "2024-01-30",
+      "dias_emprestimo": 25,
       "dias_atraso": 6,
-      "multa": 12.00
+      "valor_multa_dia": 2.00,
+      "multa": 12.00,
+      "status": "Atrasado"
     },
     {
       "id_emprestimo": "E003",
@@ -30,8 +36,11 @@
       "usuario": "Carlos Santos",
       "data_emprestimo": "2024-01-15",
       "data_devolucao": "2024-01-29",
+      "dias_emprestimo": 14,
       "dias_atraso": 0,
-      "multa": 0.00
+      "valor_multa_dia": 2.00,
+      "multa": 0.00,
+      "status": "No prazo"
     },
     {
       "id_emprestimo": "E004",
@@ -41,8 +50,11 @@
       "usuario": "Ana Costa",
       "data_emprestimo": "2024-01-12",
       "data_devolucao": "2024-01-26",
+      "dias_emprestimo": 14,
       "dias_atraso": 0,
-      "multa": 0.00
+      "valor_multa_dia": 2.00,
+      "multa": 0.00,
+      "status": "No prazo"
     },
     {
       "id_emprestimo": "E005",
@@ -52,8 +64,81 @@
       "usuario": "Pedro Lima",
       "data_emprestimo": "2024-01-03",
       "data_devolucao": "2024-02-05",
+      "dias_emprestimo": 33,
       "dias_atraso": 12,
-      "multa": 24.00
+      "valor_multa_dia": 2.00,
+      "multa": 24.00,
+      "status": "Atrasado"
+    },
+    {
+      "id_emprestimo": "E006",
+      "livro": "Harry Potter e a Pedra Filosofal",
+      "autor": "J.K. Rowling",
+      "genero": "Fantasia",
+      "usuario": "Lucas Mendes",
+      "data_emprestimo": "2024-01-18",
+      "data_devolucao": "2024-02-01",
+      "dias_emprestimo": 14,
+      "dias_atraso": 0,
+      "valor_multa_dia": 2.00,
+      "multa": 0.00,
+      "status": "No prazo"
+    },
+    {
+      "id_emprestimo": "E007",
+      "livro": "O Hobbit",
+      "autor": "J.R.R. Tolkien",
+      "genero": "Fantasia",
+      "usuario": "Mariana Rocha",
+      "data_emprestimo": "2024-01-07",
+      "data_devolucao": "2024-02-02",
+      "dias_emprestimo": 26,
+      "dias_atraso": 5,
+      "valor_multa_dia": 2.00,
+      "multa": 10.00,
+      "status": "Atrasado"
+    },
+    {
+      "id_emprestimo": "E008",
+      "livro": "Dom Casmurro",
+      "autor": "Machado de Assis",
+      "genero": "Clássico",
+      "usuario": "Fernanda Alves",
+      "data_emprestimo": "2024-01-20",
+      "data_devolucao": "2024-02-03",
+      "dias_emprestimo": 14,
+      "dias_atraso": 0,
+      "valor_multa_dia": 2.00,
+      "multa": 0.00,
+      "status": "No prazo"
+    },
+    {
+      "id_emprestimo": "E009",
+      "livro": "A Revolução dos Bichos",
+      "autor": "George Orwell",
+      "genero": "Fábula Política",
+      "usuario": "Rafael Nogueira",
+      "data_emprestimo": "2024-01-22",
+      "data_devolucao": "2024-02-10",
+      "dias_emprestimo": 19,
+      "dias_atraso": 3,
+      "valor_multa_dia": 2.00,
+      "multa": 6.00,
+      "status": "Atrasado"
+    },
+    {
+      "id_emprestimo": "E010",
+      "livro": "O Pequeno Príncipe",
+      "autor": "Antoine de Saint-Exupéry",
+      "genero": "Literatura Infantil",
+      "usuario": "Beatriz Fonseca",
+      "data_emprestimo": "2024-01-25",
+      "data_devolucao": "2024-02-08",
+      "dias_emprestimo": 14,
+      "dias_atraso": 0,
+      "valor_multa_dia": 2.00,
+      "multa": 0.00,
+      "status": "No prazo"
     }
   ]
 }
