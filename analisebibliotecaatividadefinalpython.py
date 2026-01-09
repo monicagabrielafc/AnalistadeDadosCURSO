@@ -82,4 +82,21 @@ for livro in emprestimo_por_livro:
 
 #Livros com maior valor de multa acumulada
 
+# Dicionário para somar multas por livro
+multa_por_livro = {}
+
+for livro in lista_livros:
+    total_multa = 0
+    for emprestimo in lista_emprestimos:
+        if emprestimo["livro"] == livro:
+            total_multa += emprestimo["multa"]
+    multa_por_livro[livro] = total_multa
+print()
+print ("MULTAS DOS LIVROS")
+for livro in multa_por_livro:
+
+    print(f"{livro} - {multa_por_livro[livro]})")
+
+
+
 #Soma de multa por livro
